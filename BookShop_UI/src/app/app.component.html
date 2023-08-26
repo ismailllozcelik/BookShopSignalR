@@ -1,0 +1,15 @@
+Kitaplar
+
+<table>
+  <tr>
+    <td style="padding: 10px" *ngFor="let book of modelBooks">
+      <div style=" text-align: center"><b>[{{book.id}}] {{book.name}}</b></div>
+      <img src="/assets/images/{{book.imgPath}}" height="220" />
+      <div style=" text-align: center">
+        <h4><b>
+            <div color="red">{{book.price | currency:'€'}}</div>
+          </b></h4>
+      </div>
+    </td>
+  </tr>
+</table>
